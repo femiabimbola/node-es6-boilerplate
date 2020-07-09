@@ -1,0 +1,23 @@
+{
+  "name": "node-boiler-es6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && babel src --out-dir dist",
+    "start": "npm run build && nodemon dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "nodemon": "^2.0.4",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
