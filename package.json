@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf dist && babel src --out-dir dist",
-    "start": "npm run build && nodemon dist/index.js"
+    "build": "rimraf dist && babel src --out-dir dist && nodemon dist/index.js",
+    "start": "nodemon --exec babel-node src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "devDependencies": {
     "@babel/cli": "^7.10.4",
     "@babel/core": "^7.10.4",
+    "@babel/node": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
     "nodemon": "^2.0.4",
     "rimraf": "^3.0.2"
